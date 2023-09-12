@@ -3,9 +3,11 @@ const express = require('express')
 const router = express.Router()
 
 // Підключіть файли роутів
+
+const post = require('./post')
+router.use('/', post)
 // const test = require('./test')
 // Підключіть інші файли роутів, якщо є
-
 // Об'єднайте файли роутів за потреби
 // router.use('/', test)
 // Використовуйте інші файли роутів, якщо є
